@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="expertSystem.jnlp">
+  <information>
+    <title>My App</title>
+    <vendor>Unknown</vendor>
+    <description>expertSystem</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="expertSystem.jar" size="16814" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="703" height="515" main-class="chgl16.space.Main"  name="expertSystem" />
+  <update check="background"/>
+</jnlp>

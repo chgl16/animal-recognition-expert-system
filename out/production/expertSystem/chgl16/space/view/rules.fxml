@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="515.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chgl16.space.controller.RuleController">
+    <children>
+        <Text layoutX="274.0" layoutY="61.0" opacity="0.87" strokeType="OUTSIDE" strokeWidth="0.0" text="动物识别专家系统">
+            <font>
+                <Font name="System Bold Italic" size="22.0" />
+            </font>
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#654f4f" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Text>
+        <Text fill="#333333e3" layoutX="17.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="规则库">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Text>
+        <TextField fx:id="conditionTextFieldComponent" layoutX="12.0" layoutY="406.0" prefHeight="39.0" prefWidth="320.0" promptText="条件：多条’&amp;‘分隔 ，如：哺乳动物&amp;直立行走&amp;善用工具" />
+        <Button fx:id="addButtonComponent" layoutX="606.0" layoutY="406.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="84.0" style="-fx-background-color: #28a745;" text="添加" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+            <effect>
+                <Blend mode="DARKEN" />
+            </effect>
+        </Button>
+        <Button fx:id="deleteButtonComponent" layoutX="606.0" layoutY="462.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="84.0" style="-fx-background-color: #d00;" text="删除" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Button>
+      <TableView fx:id="tableViewComponent" editable="true" layoutX="14.0" layoutY="107.0" prefHeight="271.0" prefWidth="676.0">
+        <columns>
+            <TableColumn fx:id="idTableColumnComponent" prefWidth="88.0" text="编号" />
+          <TableColumn fx:id="conditionTableColumnComponent" prefWidth="420.0" text="条件" />
+          <TableColumn fx:id="resultTableColumnComponent" prefWidth="150.0" resizable="false" text="结果" />
+        </columns>
+      </TableView>
+      <TextField fx:id="resultTextFieldComponent" layoutX="341.0" layoutY="407.0" prefHeight="39.0" prefWidth="121.0" promptText="结果，如：人" />
+      <RadioButton fx:id="isAddToAimsRadioButtonComponent" layoutX="470.0" layoutY="414.0" mnemonicParsing="false" text="加到目标集" textFill="#b5b5b5">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="idTextFieldComponent" layoutX="474.0" layoutY="462.0" prefHeight="39.0" prefWidth="121.0" promptText="编号，如：2" />
+      <Text fill="#7c7676e3" layoutX="17.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="修改说明：只需要双击单元格，修改后按Enter键保存" wrappingWidth="429.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+    </children>
+</Pane>

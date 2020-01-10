@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="755.0" style="-fx-border-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chgl16.space.controller.IndexController">
+   <children>
+      <Text layoutX="288.0" layoutY="70.0" opacity="0.87" strokeType="OUTSIDE" strokeWidth="0.0" text="动物识别专家系统">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#654f4f" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <TextArea fx:id="userInputComponent" layoutX="19.0" layoutY="150.0" prefHeight="263.0" prefWidth="135.0" promptText="每个事实一行" />
+      <Text fill="#777777" layoutX="68.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="专业：计算机科学与技术                 姓名：陈观林                 学号：2016051529" wrappingWidth="651.0" />
+      <Text fill="#333333e3" layoutX="19.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="输入事实">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="processComponent" editable="false" layoutX="180.0" layoutY="150.0" prefHeight="139.0" prefWidth="560.0" />
+      <Text fill="#333333e3" layoutX="180.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="推理过程">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="resultComponent" editable="false" layoutX="376.0" layoutY="349.0" prefHeight="64.0" prefWidth="176.0" />
+      <Text fill="#333333e3" layoutX="424.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="推理结果">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="564.0" layoutY="349.0" mnemonicParsing="false" onAction="#goReason" prefHeight="64.0" prefWidth="176.0" style="-fx-background-color: #28a745;" text="进行推理" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <effect>
+            <Blend mode="DARKEN" />
+         </effect>
+      </Button>
+      <Button layoutX="180.0" layoutY="349.0" mnemonicParsing="false" onAction="#goRuleView" prefHeight="64.0" prefWidth="176.0" style="-fx-background-color: #17a2b8;" text="规则库操作" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
